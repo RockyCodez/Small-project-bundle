@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Arial", sans-serif;
+}
+
+.landing-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+}
+
+.landing-content {
+  text-align: center;
+  color: white;
+}
+
+.landing-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.landing-content p {
+  font-size: 19px;
+  margin-bottom: 30px;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}

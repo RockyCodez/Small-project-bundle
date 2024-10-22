@@ -1,0 +1,54 @@
+.list-container {
+  height: 100vh;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+}
+
+.list-content {
+  text-align: center;
+  color: white;
+}
+
+.list-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.list-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #ffffff33;
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff33;
+}
+
+.button-layout {
+  display: flex;
+  gap: 4px;
+}
+
+.back-btn-wrapper {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}

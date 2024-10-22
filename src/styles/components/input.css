@@ -1,0 +1,15 @@
+.input {
+  height: 34px;
+  width: 270px;
+}
+
+.input-label {
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.form-error {
+  position: absolute;
+  font-size: 18px;
+  color: #c41010;
+}

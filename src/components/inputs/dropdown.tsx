@@ -1,5 +1,6 @@
-import { DropdownInterface } from "../../types/components";
-import "../../styles/components/dropdown.css";
+import { DropdownInterface } from "src/types/components";
+
+import "src/styles/components/dropdown.css";
 
 const options = [
   { name: "End of list", value: 0 },

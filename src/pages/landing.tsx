@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
-import { Button } from "../components";
+import { ROUTES } from "src/constants";
+import { Button } from "src/components";
 
 import "../styles/pages/landing.css";
 
@@ -10,11 +11,11 @@ const Landing = () => {
   return (
     <div className="landing-container">
       <div className="landing-content">
-        <h1>Peplink task</h1>
-        <p>Select one of the tasks</p>
+        <h1>Example tasks</h1>
+        <p>Select one of the pages</p>
         <div className="buttons-container">
-          <Button text="Lists" onClick={() => navigate("/list")} />
-          <Button text="Chuck Norris" onClick={() => navigate("/jokes")} />
+          <Button text="Lists" onClick={() => navigate(ROUTES.list)} />
+          <Button text="Chuck Norris" onClick={() => navigate(ROUTES.jokes)} />
         </div>
       </div>
     </div>

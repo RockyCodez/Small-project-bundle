@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import { Button, Portal } from "../../components";
-import { DataInterface, FormDataInterface } from "../../types/components";
+import { ROUTES, STORAGE } from "src/constants";
+import { Button, Portal } from "src/components";
+import { DataInterface, FormDataInterface } from "src/types/components";
+import { shoppingList } from "src/data";
+
 import Table from "./table";
-import { shoppingList } from "../../data";
 
 import "../../styles/pages/list.css";
 
@@ -12,7 +14,12 @@ const List = () => {
   const navigate = useNavigate();
 
   const [isPortalOpen, setIsPortalOpen] = useState(false);
-  const [currShoppingList, setCurrShoppingList] = useState(shoppingList);
+  const [currShoppingList, setCurrShoppingList] = useState<DataInterface[]>(
+    () => {
+      const savedList = localStorage.getItem(STORAGE.list);
+      return savedList ? JSON.parse(savedList) : shoppingList;
+    }
+  );
   const [itemToEdit, setItemToEdit] = useState<DataInterface>();
   const [editIndex, setEditIndex] = useState<number | null>(null);
 
@@ -75,18 +82,29 @@ const List = () => {
     });
   };
 
+  useEffect(() => {
+    localStorage.setItem(STORAGE.list, JSON.stringify(currShoppingList));
+  }, [currShoppingList]);
+
+  const handleLocalStorageDelete = () => localStorage.clear();
+
   return (
     <div className="list-container">
       <div className="back-btn-wrapper">
-        <Button text="Back" onClick={() => navigate(-1)} />
+        <Button text="Back" onClick={() => navigate(ROUTES.landing)} />
       </div>
       <div className="list-content">
         <h1>Shopping list</h1>
-
-        <Button
-          text="Add additional item"
-          onClick={() => setIsPortalOpen(true)}
-        />
+        <div className="list-buttons">
+          <Button
+            text="Add additional item"
+            onClick={() => setIsPortalOpen(true)}
+          />
+          <Button
+            text="Delete local storage"
+            onClick={() => handleLocalStorageDelete()}
+          />
+        </div>
         <Table
           currShoppingList={currShoppingList}
           handleReorder={handleReorder}

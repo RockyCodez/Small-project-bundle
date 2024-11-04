@@ -3,12 +3,13 @@ import { FieldValues, FormProvider, useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 
+import { FormDataInterface, FormInterface } from "src/types/components";
+
 import Button from "../button";
 import Input from "../inputs/input";
 import Dropdown from "../inputs/dropdown";
-import { FormDataInterface, FormInterface } from "../../types/components";
 
-import "../../styles/components/form.css";
+import "src/styles/components/form.css";
 
 const schema = yup
   .object({

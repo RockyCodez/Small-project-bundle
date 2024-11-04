@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import { Button } from "../components";
+import { ROUTES } from "src/constants";
+import { Button } from "src/components";
 
 import "../styles/pages/jokes.css";
 
@@ -42,7 +43,7 @@ const Jokes = () => {
           text="Back"
           onClick={() => {
             setJoke(undefined);
-            navigate(-1);
+            navigate(ROUTES.landing);
           }}
         />
       </div>

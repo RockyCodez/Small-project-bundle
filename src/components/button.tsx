@@ -1,4 +1,4 @@
-import { IButton } from "../types/components";
+import { IButton } from "src/types/components";
 
 import "../styles/components/button.css";
 

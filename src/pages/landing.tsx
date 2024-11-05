@@ -16,6 +16,10 @@ const Landing = () => {
         <div className="buttons-container">
           <Button text="Lists" onClick={() => navigate(ROUTES.list)} />
           <Button text="Chuck Norris" onClick={() => navigate(ROUTES.jokes)} />
+          <Button
+            text="Rick and morty API"
+            onClick={() => navigate(ROUTES.rickAndMorty)}
+          />
         </div>
       </div>
     </div>

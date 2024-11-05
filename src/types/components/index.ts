@@ -4,7 +4,8 @@ export interface DropdownInterface {
   setSelectedOption: (data: number) => void;
 }
 
-export interface IInput extends React.InputHTMLAttributes<HTMLInputElement> {
+export interface InputInterface
+  extends React.InputHTMLAttributes<HTMLInputElement> {
   label: string;
   name: string;
   helperText?: string;
@@ -25,12 +26,20 @@ export interface FormInterface {
   itemToEdit?: DataInterface;
 }
 
-export interface IPortal {
+export interface PortalInterface {
   onClose: () => void;
   onSubmit: (data: any) => void;
   itemToEdit?: DataInterface;
 }
 
-export interface IButton extends React.ComponentPropsWithoutRef<"button"> {
+export interface ButtonInterface
+  extends React.ComponentPropsWithoutRef<"button"> {
   text: string;
+}
+
+export interface PageButtonsInterface {
+  handlePrevPage: () => void;
+  handleNextPage: () => void;
+  hasNext: boolean;
+  hasPrev: boolean;
 }

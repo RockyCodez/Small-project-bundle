@@ -1,10 +1,10 @@
 import { useFormContext } from "react-hook-form";
 
-import { IInput } from "src/types/components";
+import { InputInterface } from "src/types/components";
 
 import "src/styles/components/input.css";
 
-const Input = ({ label, helperText, name, ...props }: IInput) => {
+const Input = ({ label, helperText, name, ...props }: InputInterface) => {
   const { register } = useFormContext();
   return (
     <div>

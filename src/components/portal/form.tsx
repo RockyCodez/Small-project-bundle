@@ -5,9 +5,9 @@ import { yupResolver } from "@hookform/resolvers/yup";
 
 import { FormDataInterface, FormInterface } from "src/types/components";
 
-import Button from "../button";
-import Input from "../inputs/input";
-import Dropdown from "../inputs/dropdown";
+import Button from "../buttons/Button";
+import Input from "../inputs/Input";
+import Dropdown from "../inputs/Dropdown";
 
 import "src/styles/components/form.css";
 

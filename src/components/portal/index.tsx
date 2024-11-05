@@ -1,12 +1,12 @@
 import { createPortal } from "react-dom";
 
-import Form from "./form";
-import { IPortal } from "../../types/components";
-import Button from "../button";
+import { PortalInterface } from "src/types/components";
+import Form from "./Form";
+import Button from "../buttons/Button";
 
 import "../../styles/components/portal.css";
 
-const Portal = ({ onClose, onSubmit, itemToEdit }: IPortal) => {
+const Portal = ({ onClose, onSubmit, itemToEdit }: PortalInterface) => {
   return createPortal(
     <div className="portal">
       <div className="portal-content">

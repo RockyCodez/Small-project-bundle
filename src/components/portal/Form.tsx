@@ -3,7 +3,7 @@ import { FieldValues, FormProvider, useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 
-import { FormDataInterface, FormInterface } from "src/types/components";
+import { FormDataInterface, FormInterface } from "types/components";
 
 import Button from "../buttons/Button";
 import Input from "../inputs/Input";

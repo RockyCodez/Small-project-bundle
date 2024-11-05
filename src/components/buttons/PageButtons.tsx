@@ -1,5 +1,6 @@
-import { PageButtonsInterface } from "src/types/components";
+import { PageButtonsInterface } from "types/components";
 import Button from "./Button";
+
 import "src/styles/components/pagebuttons.css";
 
 const PageButtons = ({

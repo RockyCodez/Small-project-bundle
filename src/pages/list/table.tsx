@@ -1,5 +1,5 @@
 import { Button } from "src/components";
-import { TableInterface } from "src/types/pages/list";
+import { TableInterface } from "types/pages/list";
 
 const Table = ({
   currShoppingList,

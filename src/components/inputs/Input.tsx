@@ -1,6 +1,6 @@
 import { useFormContext } from "react-hook-form";
 
-import { InputInterface } from "src/types/components";
+import { InputInterface } from "types/components";
 
 import "src/styles/components/input.css";
 

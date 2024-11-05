@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 import { ROUTES, STORAGE } from "src/constants";
 import { Button, Portal } from "src/components";
-import { DataInterface, FormDataInterface } from "src/types/components";
+import { DataInterface, FormDataInterface } from "types/components";
 import { shoppingList } from "src/data";
 
 import Table from "./table";

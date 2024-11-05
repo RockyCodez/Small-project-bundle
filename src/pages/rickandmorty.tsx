@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 
 import { Button, CharacterCard, Spinner } from "src/components";
 import { RickAndMortyApiService } from "src/APIService";
-import { AllCharactersInterface, CharacterInterface } from "src/types/api";
 import { ROUTES } from "src/constants";
+import { AllCharactersInterface, CharacterInterface } from "types/api";
 
 import "src/styles/pages/rickandmorty.css";
 

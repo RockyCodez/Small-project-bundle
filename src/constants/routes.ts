@@ -1,5 +1,6 @@
 export const ROUTES = {
-    landing: "/",
-    list: "/list",
-    jokes: "/jokes",
-}
+  landing: "/",
+  list: "/list",
+  jokes: "/jokes",
+  rickAndMorty: "/rick-and-morty",
+};

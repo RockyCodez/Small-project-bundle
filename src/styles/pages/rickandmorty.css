@@ -1,0 +1,50 @@
+.rickandmorty-container {
+  min-height: 100vh;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+}
+
+.rickandmorty-content {
+  text-align: center;
+  color: white;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rickandmorty-content h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #00000080;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  letter-spacing: 1px;
+}
+
+.rickandmorty-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-height: 780px;
+  overflow-y: scroll;
+  scrollbar-width: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.error-message {
+  background: #ffffffe6;
+  color: #6a11cb;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px #00000033;
+  margin: 10px 0;
+  font-weight: bold;
+  text-align: center;
+}

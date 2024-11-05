@@ -1,4 +1,4 @@
-import { ButtonInterface } from "src/types/components";
+import { ButtonInterface } from "types/components";
 
 import "src/styles/components/button.css";
 

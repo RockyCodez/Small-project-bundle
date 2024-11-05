@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import { ROUTES } from "src/constants";
 import { Button } from "src/components";
+import { ROUTES } from "src/constants";
 
 import "../styles/pages/jokes.css";
 

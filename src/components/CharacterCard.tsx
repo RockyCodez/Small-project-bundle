@@ -1,4 +1,4 @@
-import { CharacterInterface } from "src/types/api";
+import { CharacterInterface } from "types/api";
 
 import "src/styles/components/charactercard.css";
 

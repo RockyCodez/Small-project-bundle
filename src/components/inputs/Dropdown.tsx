@@ -1,4 +1,4 @@
-import { DropdownInterface } from "src/types/components";
+import { DropdownInterface } from "types/components";
 
 import "src/styles/components/dropdown.css";
 

@@ -78,7 +78,11 @@ const RickAndMorty = () => {
         <h1>Rick and morty</h1>
         <div className="rickandmorty-cards-wrapper" ref={containerRef}>
           {allCharacters?.map((character, i) => (
-            <CharacterCard character={character} key={i} />
+            <CharacterCard
+              character={character}
+              key={i}
+              onClick={() => navigate(ROUTES.characterInner(character.id))}
+            />
           ))}
         </div>
         {fetchError && <p className="error-message">{fetchError}</p>}

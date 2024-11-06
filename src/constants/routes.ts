@@ -3,4 +3,5 @@ export const ROUTES = {
   list: "/list",
   jokes: "/jokes",
   rickAndMorty: "/rick-and-morty",
+  characterInner: (id: number | string) => `/rick-and-morty/${id}`,
 };

@@ -25,43 +25,10 @@
   border-radius: 10px;
 }
 
-.card-details {
-  padding: 15px;
-}
-
 .card-name {
   margin-top: 10px;
   font-size: 1.5em;
   font-weight: bold;
   color: #3e72a3;
   margin-bottom: 10px;
-}
-
-.card-status,
-.card-gender,
-.card-species,
-.card-location {
-  font-size: 0.9em;
-  color: #444;
-  margin: 5px 0;
-}
-
-.card-status span {
-  font-weight: bold;
-  color: #3cba92;
-}
-
-.card-status span.dead {
-  color: #d9534f;
-}
-
-.card-status span.unknown {
-  color: #8c8c8c;
-}
-
-.card-gender span,
-.card-species span,
-.card-location span {
-  font-weight: bold;
-  color: #3e72a3;
 }

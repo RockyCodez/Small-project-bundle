@@ -1,3 +1,5 @@
+import { CharacterInterface } from "../api";
+
 export interface DropdownInterface {
   label: string;
   selectedOption?: number;
@@ -42,4 +44,9 @@ export interface PageButtonsInterface {
   handleNextPage: () => void;
   hasNext: boolean;
   hasPrev: boolean;
+}
+
+export interface CharacterCardInterface {
+  character: CharacterInterface;
+  onClick: () => void;
 }

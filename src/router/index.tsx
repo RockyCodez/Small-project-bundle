@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { List, Jokes, Landing, RickAndMorty } from "src/pages";
+import { List, Jokes, Landing, RickAndMorty, CharacterInner } from "src/pages";
 import { ROUTES } from "src/constants";
 
 const Router = () => {
@@ -11,6 +11,10 @@ const Router = () => {
         <Route path={ROUTES.list} element={<List />} />
         <Route path={ROUTES.jokes} element={<Jokes />} />
         <Route path={ROUTES.rickAndMorty} element={<RickAndMorty />} />
+        <Route
+          path={ROUTES.characterInner(":id")}
+          element={<CharacterInner />}
+        />
       </Routes>
     </BrowserRouter>
   );
